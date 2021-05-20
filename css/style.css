@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  width: 75%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .subtitle h2 {
+  font-weight: 200;
+  font-size: 2rem;
+  color: hsl(229, 6%, 66%);
+  text-align: center;
+}
+
+.container .title h1 {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+  text-align: center;
+}
+
+.container .description {
+  text-align: center;
+  padding: 15px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(1fr, 3);
+  grid-gap: 1em;
+  margin-top: 15px;
+}
+
+.card-container .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-container .column1 {
+  grid-column: 1;
+}
+
+.card-container .column2 {
+  grid-column: 2;
+}
+
+.card-container .column2 .card {
+  margin: 1em 0;
+}
+
+.card-container .column3 {
+  grid-column: 3;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 0.2em 1em 0em hsl(229, 6%, 66%);
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  width: 100%;
+  max-width: 350px;
+  height: 50%;
+  border-radius: 5px;
+}
+
+.card1 {
+  border-top: solid 4px hsl(180, 62%, 55%);
+  justify-content: space-between;
+}
+
+.card2 {
+  border-top: solid 4px hsl(0, 78%, 62%);
+}
+
+.card3 {
+  border-top: solid 4px hsl(34, 97%, 64%);
+}
+
+.card4 {
+  border-top: solid 4px hsl(212, 86%, 64%);
+  justify-content: space-between;
+}
+
+.card2 .card-description,
+.card3 .card-description {
+  margin: 5px 0;
+}
+
+.card .card-description {
+  text-align: left;
+  font-size: 0.8rem;
+  color: hsl(229, 6%, 66%);
+}
+
+.card .card-icon {
+  align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+  .container .description {
+    text-align: center;
+    margin: 0 20%;
+  }
+
+  .card-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+  }
+
+  .card {
+      height: 100%;
+  }
+
+}
